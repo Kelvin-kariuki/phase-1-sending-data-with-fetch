@@ -1,6 +1,6 @@
 // Add your code here
 function submitData(name,email) {
-    const users ={uName:name, uEmail: email}
+    const users ={name:name, email: email}
     return fetch('http://localhost:3000/users',{
         method: "POST",
         Headers: {
@@ -31,3 +31,4 @@ function submitData(name,email) {
 
 // The program accepts username and email
 
+submitData("Kelvin","kelvin@gmail.com");
